@@ -3,8 +3,9 @@
 class users extends adb
 {	
     
-    function add_nurse($name,$user,$pass,$dept){
-      
+    function add_nurse($firstname,$lastname,$pass,$dept){
+       $insert_query= "insert into new_nurse set firstname='$firstname', lastname = '$lastname', age ='$age', dob = '$dob', usertype='nurse'";
+        return $this->query ( $insert_query );
     }
 	
 	}
