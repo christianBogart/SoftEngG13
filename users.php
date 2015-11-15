@@ -3,6 +3,9 @@
 class users extends adb
 {	
     
+    function add_nurse($name,$user,$pass,$dept){
+      
+    }
 	
 	}
 	
