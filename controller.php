@@ -1,6 +1,20 @@
 <?php
 
-
+if ( isset ( $_REQUEST [ 'cmd' ] ) )
+{
+    $cmd = $_REQUEST[ 'cmd' ];
+    
+    switch ( $cmd )
+    {
+        case 1:
+            add_nurse ( );
+            break;
+            default:
+            echo '{"result":0,message:"failed command"}';
+            break;
+    }
+    
+}
 
 
 function add_nurse( ){
