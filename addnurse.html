@@ -6,6 +6,29 @@
 
 </head>
 <body>
-
+<div class="addnurseform">
+			<form>
+				<div class="form-group">
+				<label style="color:#454445;" >First name</label>
+				<input type="text" class="form-control" id="firstname" placeholder="Enter first name" required>
+				</div>
+				<div class="form-group">
+				<label style="color:#454445;" >Last name</label>
+				<input type="text" class="form-control" id="lastname" placeholder="Enter last name" required>
+				</div>
+				<div>
+				<label  style="color:#454445;">Age</label>
+				<input class="form-control" id="age"type="text" name="age" placeholder="Enter age" required>
+				</div>
+				<div>
+				<label  style="color:#454445;">DOB</label>
+				<input class="form-control" id="dob"type="date" name="dob" required>
+				</div>
+				
+				<button onClick="addnurse()" type="button">
+							Add Nurse
+                  </button>
+			</form>			
+</div>
 </body>
 </html>
