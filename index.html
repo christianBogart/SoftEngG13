@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" ng-app="application">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zMail</title>
+    <link href="assets/css/app.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/task.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/routes.js"></script>
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/jquery-2.1.4.js"></script>
+    <script src="assets/js/task.js"></script>
+
+  </head>
+
+  <style>
+    .menu-bar {margin-bottom: 0;}
+    #sub-nav, .messages {border-right: 1px solid #eee;}
+    .medium-grid-content {padding:1rem !important;}
+  </style>
+
+  <body>
+
+    <div class="grid-frame vertical">
+      <div class="primary title-bar" id="titlebar">
+        <div class="center title"><a ui-sref="home">Task manager</a></div>
+        <span class="right"><a ui-sref="settings">Settings</a></span>
+      </div>
+      <div ui-view class="grid-block">
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<div zf-panel position="left" id="sub-nav" class="fast bounceInOut medium-3 medium-grid-content">
+	<a class="button expand" id="addbutton"zf-open="compose">Add task</a>
+	<section class="block-list with-icons">
+	  <ul>
+	  	<li class="hide-for-medium">
+	  		<img src="http://placehold.it/1x1" alt="">
+	      <a zf-close="sub-nav">Close</a>
+	    </li>
+	    <li>
+	    	<img src="http://placehold.it/1x1" alt="">
+	      <a href="#">Tasks</a>
+	    </li>
+	    <!-- With an icon -->
+	    <li>
+	      <img src="http://placehold.it/1x1" alt="">
+	      <a href="#">Nurses</a>
+	    </li>
+	    <li>
+	    	<img src="http://placehold.it/1x1" alt="">
+	    	<a href="#">Supervisors</a>
+	    </li>
+	  </ul>
+	</section>
+</div>
+
+<div class="small-12 medium-3 messages grid-content">
+  <a class="button secondary expand hide-for-medium" zf-open="sub-nav">This</a>
+  <section class="block-list">
+  	<li>
+  		<input type="text" placeholder="Search">
+   	</l1>
+		
+  </section>
+</div>
+
+<div zf-panel id="message" position="right" class="fast bounceInOut small-12 medium-6 medium-grid-content">
+  <a class="hide-for-medium button tiny" zf-close="message">Back</a>
+  <h2>Task title details</h2>
+  <p>start date - 6/12/2014</p>
+  <hr />
+</div>
+
+<!-- Start Compose Message -->
+<zf-modal overlay="true" id="compose">
+	<div class="grid-block vertical">
+		<div class="primary title-bar" id="titlebar">
+			<div class="center title">Create task</div>
+			<span class="left"><a zf-close="compose" onclick="refreshAddForm()"href="#">Cancel</a></span>
+			<span class="right"><a  href="#" onclick="addTask()" zf-close="compose">Submit</a></span>
+		</div>
+		<div style="height:20px"></div>
+		<div class="grid-content">
+			<label>Task title
+        <input type="text" id="taskname" placeholder="Task title" />
+      </label>
+      <label>Task description
+        <textarea id="description" placeholder="Description..."></textarea>
+      </label>
+      <label>Start date
+        <input type="date" id="sdate" name="startdate">
+      </label>
+			<label>End date
+        <input type="date" id="ddate" name="enddate">
+      </label>
+		</div>
+		</div>
+	</div>
+</zf-modal>
+<!-- End Compose Message -->

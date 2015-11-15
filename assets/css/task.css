@@ -1,0 +1,15 @@
+#titlebar{
+	
+	background: #03ba7c;
+	height:80px
+}
+
+#addbutton{
+
+	background: #03ba7c;
+}
+#header{
+	width:100%;
+	height:50px;
+	background: #000000;
+}
