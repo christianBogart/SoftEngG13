@@ -3,11 +3,14 @@
 <head>
 	<title>Add Nurse</title>
 	<script src="nurse.js"></script>
+	<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+
 <div class="addnurseform">
-			<form>
+			<form class="smart-green">
+			<h1>Add nurse</h1>
 				<div class="form-group">
 				<label style="color:#454445;" >First name</label>
 				<input type="text" class="form-control" id="firstname" placeholder="Enter first name" required>
@@ -25,7 +28,7 @@
 				<input class="form-control" id="dob"type="date" name="dob" required>
 				</div>
 				
-				<button onClick="addnurse()" type="button">
+				<button onClick="addnurse()" type="button" class="button">
 							Add Nurse
                   </button>
 			</form>			
